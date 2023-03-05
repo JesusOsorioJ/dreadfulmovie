@@ -1,0 +1,15 @@
+<app-header filter="home"/>
+
+<div class="grid grid-cols-2 h-[70vh] p-0">
+    <a class="bg-auto bg-no-repeat bg-center grid items-end" [routerLink]="['/search']"
+        [queryParams]="{ type: 'movies', page:'1'}"
+        style="background-image: url(https://api.lorem.space/image/fashion?w=640&h=480&r=6745)">
+        <p class="opacity-80 bg-red-600 text-white p-4 text-2xl font-semibold">Movies</p>
+    </a>
+    <a class="bg-auto bg-no-repeat bg-center grid items-end" [routerLink]="['/search']"
+        [queryParams]="{ type: 'series', page:'1'}"
+        style="background-image: url(https://api.lorem.space/image/fashion?w=640&h=480&r=8052)">
+        <p class="opacity-80 bg-red-600 text-white p-4 text-2xl font-semibold">Series</p>
+    </a>
+</div>
+<app-footer />

@@ -1,0 +1,12 @@
+<div class="group relative inline-block overflow-hidden" width="350" height="350">
+    <img [ngSrc]="data.images[0]" width="350" height="350">
+    <div class=" w-[350px] h-[180px] absolute bottom-0 left-0 flex flex-col flex-wrap
+     bg-black opacity-80 translate-y-[133px] duration-700 group-hover:translate-y-0
+    ">
+        <div class="p-4 w-[300px]">
+            <p class="text-white text-lg">{{data.title}}</p>
+            <p class="text-white text-base pb-3">$ {{data.price}}</p>
+            <p class="text-white text-sm">{{data.description}}</p>
+        </div>
+    </div>
+</div>
